@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+pydantic
+openai>=1.0.0
+streamlit
+requests
+# docker stop fastapi-container
+# docker rm fastapi-container
+# docker build -t fastapi-app .
+# docker run -d -p 8000:8000 --name fastapi-container fastapi-app
+
+# docker build -t fastapi-app .
+# docker run -d -p 8000:8000 --env-file .env --name fastapi-container fastapi-app
+
+# dc@DCui-MacBookAir fastapi-app % curl -X POST http://localhost:8000/generate \
+#      -H "Content-Type: application/json" \
+#      -d '{"prompt": "중세 판타지 배경으로 세 줄짜리 모험 이야기"}'
