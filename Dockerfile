@@ -12,5 +12,3 @@ EXPOSE 8000 8501
 
 CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port 8000 & streamlit run streamlit_app.py --server.address 0.0.0.0 --server.port 8501"]
 
-docker run -d -p 8000:8000 -p 8501:8501 --name trpg-container \
-  -e OPENAI_API_KEY=sk-실제_키 fastapi-trpg
