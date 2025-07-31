@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-st.set_page_config(page_title="헤밍웨이 TRPG", page_icon="🎲")
+st.set_page_config(page_title="텍스트 게임", page_icon="🎲")
 st.title("🎲 텍스트 게임")
 
 # --- 공통 시스템 프롬프트 ---
