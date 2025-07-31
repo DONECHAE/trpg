@@ -74,7 +74,7 @@ if st.button("TRPG 시작"):
     문 삐걱 열렸다
     """
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4.1",
         messages=[
             {"role": "system", "content": system_prompt + "\n\n" + prompt}
         ],
@@ -115,7 +115,7 @@ if st.session_state.messages:
         멀리서 까마귀 울음
         """
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-4.1",
             messages=[
                 {"role": "system", "content": system_prompt + "\n\n" + prompt}
             ],
